@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+	--bg: hsl(30, 38%, 92%);
+	--primary: hsl(158, 37%, 42%);
+	--secondary: hsl(158, 36%, 28%);
+	--tertiary: hsl(228, 12%, 48%);
+	--accent: hsl(159, 31%, 40%);
+	--textClr: hsl(228, 12%, 48%);
+	--dark: hsl(212, 21%, 14%);
+	--border: 1px solid hsla(330, 100%, 71%, 0.25);
+	--anchor: (195, 53%, 79%);
+	--ffh1: "Fraunces";
+	--ffp: "Montserrat", sans-serif;
+	--mobileimg: url("/product-preview-card-component-main/images/image-product-desktop.jpg");
+}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: var(--textClr);
+	font-family: var(--ffp);
+	font-weight: 500;
+	font-size: 14px;
+	background-color: var(--bg);
+	position: relative;
+}
+
+.card {
+	background-color: white;
+	outline: 2px solid red;
+	/* padding: 0 2em; */
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+	height: auto;
+	margin: 20% auto;
+	border-radius: 10px;
+	justify-content: center;
+	overflow: hidden;
+}
+
+img {
+	width: 375px;
+	max-height: 30vh;
+	object-position: center;
+	object-fit: cover;
+	padding-bottom: 2em;
+}
+
+.wrapper {
+	padding: 0 2rem;
+}
+
+.category {
+	text-align: left;
+	color: var(--tertiary);
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	margin-bottom: 1rem;
+	opacity: 0.5;
+}
+
+.product {
+	color: var(--dark);
+	line-height: 1em;
+	font-family: var(--ffh1);
+	font-weight: 700;
+	font-size: 2.5em;
+	margin-bottom: 1rem;
+}
+
+.description {
+	margin-bottom: 1em;
+	margin-left: 2rem;
+	opacity: 0.75;
+}
+.price {
+	color: var(--primary);
+	font-family: var(--ffh1);
+	font-weight: 700;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.markdown {
+	text-decoration: line-through;
+	position: absolute;
+	font-family: var(--ffp);
+	font-weight: 400;
+	font-size: 1rem;
+	margin: 1.2rem 0 0 15px;
+	color: var(--tertiary);
+	opacity: 0.75;
+}
+
+.icon {
+	padding: 0.5em;
+	margin-right: 0.5em;
+	background: url("/product-preview-card-component-main/images/icon-cart.svg")
+		center center no-repeat;
+}
+.btn {
+	font-size: 1.1rem;
+	width: ;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	background-color: var(--primary);
+	padding: 1rem;
+	margin-bottom: 2em;
+}
+.btn:hover {
+	background-color: var(--secondary);
+}
